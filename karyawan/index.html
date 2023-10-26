@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        header{
+            background-color: rgb(255, 0, 0);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        article{
+            padding: 20px;
+            width: 100px;
+            background-color: #f1f1f1;
+        }
+
+        footer{
+            background-color: rgb(245, 145, 145);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav{
+            background-color: rgb(255, 99, 99);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a{
+            display: block;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: orange;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form</title>
+</head>
+<body>
+    <header>
+        <h1>Data Karyawan</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="../karyawan/index.html">Karyawan</a></li>
+            <li><a href="../bagian/index.html">Bagian</a></li>
+            <li><a href="../penggajian/index.html">Penggajian</a></li>
+        </ul>
+    </nav>
+    <section>
+
+        <div>
+            <a href="tambah.html" style="background-color: grey; color: white;"> &#128070;<b>Tambah</b></a>
+        </div>
+
+            <hr>
+        
+        <div>
+            <table border="1px" style="width: 100%;" >
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nik</th>
+                        <th>Nama</th>
+                        <th>Tanggal Mulai</th>
+                        <th>Gaji Pokok</th>
+                        <th>Status Karyawan</th>
+                        <th>Aksi</th>
+                        <!-- <th>Bagian Id</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>0001</td>
+                        <td>WACHID</td>
+                        <td>2011-01-05</td>
+                        <td>3100000</td>
+                        <td>TETAP</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                    <td>2</td>
+                    <td>0002</td>
+                        <td>DWI</td>
+                        <td>2011-01-05</td>
+                        <td>3100000</td>
+                        <td>TETAP</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>3</td>
+                    <td>0003</td>
+                        <td>TRIO</td>
+                        <td>2011-01-05</td>
+                        <td>2900000</td>
+                        <td>TETAP</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>4</td>
+                    <td>0004</td>
+                        <td>ARBA</td>
+                        <td>2015-09-09</td>
+                        <td>2400000</td>
+                        <td>KONTRAK</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>5</td>
+                    <td>0005</td>
+                        <td>PANCA</td>
+                        <td>2019-09-09</td>
+                        <td>2200000</td>
+                        <td>KONTRAK</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>6</td>
+                    <td>0006</td>
+                        <td>SITI</td>
+                        <td>2021-09-16</td>
+                        <td>1500000</td>
+                        <td>MAGANG</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>7</td>
+                    <td>0008</td>
+                        <td>WINDU</td>
+                        <td>2018-08-08</td>
+                        <td>1300000</td>
+                        <td>KONTRAK</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>8</td>
+                    <td>0009</td>
+                        <td>NINO</td>
+                        <td>2022-01-05</td>
+                        <td>1000000</td>
+                        <td>TETAP</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>9</td>
+                    <td>0010</td>
+                        <td>TENTEN</td>
+                        <td>2022-01-05</td>
+                        <td>1000000</td>
+                        <td>KONTRAK</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>10</td>
+                    <td>0011</td>
+                        <td>EVAN</td>
+                        <td>2022-01-05</td>
+                        <td>1000000</td>
+                        <td><MAGANG></td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>11</td>
+                    <td>0012</td>
+                        <td>WACHID</td>
+                        <td>2007-07-07</td>
+                        <td>10000000</td>
+                        <td>TETAP</td>
+                        <td>
+                            <a href="edit.html" style="background-color: yellow; color: black;"> &#128070;<b>Edit</b></a>
+                        </td> -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>Powered by Naufal <time datetime="2023">2023</time> </p>
+    </footer>
+</body>
+</html>
